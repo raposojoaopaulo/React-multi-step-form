@@ -1,14 +1,13 @@
 import React from 'react';
 import * as C from './styles';
-import { Link } from 'react-router-dom';
+import { Theme } from '../../components/Theme';
 
 export const FormStep2 = () => {
   return (
-    <C.Container>
-      <p>Step 2/3</p>
-      <button>
-        <Link to="/step3">Next</Link>
-      </button>
-    </C.Container>
+    <Theme>
+      <C.Container>
+        <p>Step 2/3</p>
+      </C.Container>
+    </Theme>
   );
 }
