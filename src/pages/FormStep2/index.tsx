@@ -37,7 +37,7 @@ export const FormStep2 = () => {
     });
   };
 
-  const voidFunction = () => {
+  const backPage = () => {
     console.log('You back one page')
   };
 
@@ -74,7 +74,7 @@ export const FormStep2 = () => {
             <BasicButton 
               text='Back'
               additionalClasses=''
-              onClick={voidFunction}
+              onClick={backPage}
             />  
           </Link>
 

@@ -18,33 +18,7 @@ export const Container = styled.div`
   }
 
   label {
-    font-size: 13px;
-
-    input {
-      display: block;
-      margin-top: 7px;
-      box-sizing: border-box;
-      width: 100%;
-      padding: 20px 10px;
-      border: 2px solid #25CD89;
-      border-radius: 10px;
-      color: #FFF;
-      outline: 0;
-      font-size: 15px;
-      background-color: #02044A;
-    }    
-  }
-
-  button {
-    background-color: #25CD89;
-    color: #FFF;
-    font-size: 15px;
-    font-weight: bold;
-    padding: 25px 60px;
-    border: 0;
-    border-radius: 30px;  
-    cursor: pointer;
-    margin-top: 30px;
+    font-size: 13px;   
   }
 `;
 

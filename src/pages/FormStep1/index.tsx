@@ -3,6 +3,8 @@ import * as C from './styles';
 import { Theme } from '../../components/Theme';
 import { useNavigate } from "react-router-dom";
 import { useForm, FormActions } from '../../contexts/FormContext'; 
+import TextInput from '../../components/TextInput'
+import BasicButton from '../../components/BasicButton';
 
 
 export const FormStep1 = () => {
@@ -38,16 +40,18 @@ export const FormStep1 = () => {
         <h1>First your name</h1>
         <p>Fill in the field below with your full name</p>
         <hr />
-        <label>
-          Full name
-          <input 
-            type="text"
-            autoFocus
+          <TextInput 
+            label='Full Name'
+            type='text'
+            autoFocus={true}
             value={state.name}
             onChange={handleNameChange}
           />
-        </label>
-        <button onClick={handleNextStep}>Next</button>
+        <BasicButton 
+          text='Next'
+          additionalClasses='primary'
+          onClick={handleNextStep}
+        />
       </C.Container>
     </Theme>
   );

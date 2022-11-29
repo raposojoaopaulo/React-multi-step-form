@@ -5,12 +5,12 @@ export const Container = styled.div`
   border-bottom: 1px solid #16195c;
 
   h1 {
-    font-size: 28px;
+    font-size: 35px;
     margin: 0;
     padding: 0;
   } 
   p {
-    font-size: 14px;
+    font-size: 18px;
     color: #B8B8D4;
   }
 `;
