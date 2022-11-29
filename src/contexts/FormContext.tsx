@@ -3,7 +3,7 @@ import React, { createContext, useContext, useReducer } from "react";
 type State = {
   currentStep: number;
   name: string;
-  level: 0 | 1;
+  level: 0 | 1 | 2;
   email: string;
   github: string;
 };
