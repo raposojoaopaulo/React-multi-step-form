@@ -34,16 +34,8 @@ export const Container = styled.div`
       background-color: #02044A;
     }    
   }
+`;
 
-  button {
-    background-color: #25CD89;
-    color: #FFF;
-    font-size: 15px;
-    font-weight: bold;
-    padding: 25px 60px;
-    border: 0;
-    border-radius: 30px;  
-    cursor: pointer;
-    margin-top: 30px;
-  }
+export const  ButtonContainer = styled.div`
+  display: flex;
 `;

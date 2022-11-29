@@ -47,3 +47,7 @@ export const Container = styled.div`
     margin-top: 30px;
   }
 `;
+
+export const  ButtonContainer = styled.div`
+  display: flex;
+`;

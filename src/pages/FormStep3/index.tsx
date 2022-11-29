@@ -1,8 +1,9 @@
 import React, { ChangeEvent, useEffect } from 'react';
 import * as C from './styles';
 import { Theme } from '../../components/Theme';
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import { useForm, FormActions } from '../../contexts/FormContext'; 
+import BasicButton from '../../components/BasicButton';
 
 
 export const FormStep3 = () => {
@@ -24,6 +25,10 @@ export const FormStep3 = () => {
     }    
   }
 
+  const voidFunction = () => {
+    console.log('Void Function')
+  }
+
   return (
     <Theme>    
       <C.Container>
@@ -32,7 +37,15 @@ export const FormStep3 = () => {
         <p>Fill in the field below with your full name</p>
         <hr />
         
-        <button onClick={handleNextStep}>Next</button>
+        <C.ButtonContainer>
+          <Link to='/'>
+            <BasicButton 
+              text='Back'
+              additionalClasses=''
+              onClick={voidFunction}
+            />  
+          </Link>
+        </C.ButtonContainer>
       </C.Container>
     </Theme>
   );
