@@ -22,14 +22,14 @@ export const FormStep3 = () => {
     }     
   }, []);
 
-  const handleNextStep = () => {
+  const handleRegister = () => {
     if(state.email !== '' && state.github !== '' ) {
-      alert(`${state.name}
-        ${state.level}
-        ${state.email} 
-        ${state.github}
-      `)
-      navigate("/")
+      // alert(`${state.name}
+      //   ${state.level}
+      //   ${state.email} 
+      //   ${state.github}
+      // `)
+      navigate("/devprofile")
     } else {
       alert("Enter your email an github")
     }    
@@ -85,7 +85,7 @@ export const FormStep3 = () => {
           <BasicButton 
             text="Register"
             additionalClasses='primary'
-            onClick={handleNextStep}
+            onClick={handleRegister}
           /> 
         </C.ButtonContainer>
       </C.Container>
